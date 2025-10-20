@@ -2,6 +2,8 @@
 Advanced Python
 
 ## Module 1
+10/20/2025 - 10/26/2025
+
 In this module, we will review the basic elements of programming that were covered in one of your previous courses: CSD205 or CIS245.
 
 You'll be creating a program that includes a function, looping, a sentinel value, an if/else statement and getting input from the user before the program is run. For each programming assignment, you'll also need to create a flowchart using standard shapes and notation. I've placed a tutorial in the reading section in case you need a little refresh on how to contruct flowcharts. You may use any app you'd like to create the charts as long as the result is copied/pasted into a Word doc, or saved as a .pdf. You'll also need to have Python installed. If you do not, there is a link in the reading to installation instructions.
