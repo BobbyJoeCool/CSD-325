@@ -59,3 +59,39 @@ If you are not familiar with the reverse counting song "100 bottles of beer on t
 **Deliverables:**
 1) Open up a drawing application. Use a text element to include your name and assignment number at the top of the drawing. Before continuing, you might view the Flowchart and Structures video listed in the Module Reading area. Then, create a flowchart that models the above process.  Copy/paste the diagram into a Word document and save to your module-1 directory.
 2) Create a Python program that addresses the requirements of the process above. Save the file to your module-1 directory.
+
+## Module 2
+10/20/2025 - 10/26/2025
+
+In this module, we will be working on debugging, something that we all must do at some point!
+
+You'll be stepping through a provided tutorial for debugging using an IDE, but the same steps can be used with the pdb module from the Python standard library. Breakpoints, stepping in, stepping over, stepping out, and continuing are some of the more common actions to take when debugging. Many IDEs do aid when searching for syntax errors, but finding logic errors are a little more problematic.
+
+### Deliverables
+1) Module 2.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 2.2 Assignment: Documented Debugging - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+In this module's discussion board assignment, answer the following questions:
+
+1) Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+    - Why did you select this topic?
+    - Summarize the main points (in your own words) of that topic in three or four sentences.
+    - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 2.2
+For this assignment, you have three tasks. The first is find a program that you've written, or find an example online that contains at least one function, you'll then need to create a flowchart (or flowcharts) for the program, then capture debugging activity on the program.
+
+1) Create (if you haven't already) a directory in CSD-325 named module-2.
+2) Look through programs you've created from previous classes, (or do a little research and find an example of a program) that contains a least one function.
+3) Open up a drawing application. Use a text element to include your name and assignment number at the top of the drawing. Create a flowchart that models the program you selected.  Copy/paste the diagram into a Word document and save to your module-2 directory.
+4) Open the Debugging Guide from the reading material for this module and follow through the steps. You might want to practice them first..
+5) Open your program in an IDE and use the debugging tools, **OR** read through the tutorial at [Debugging in Python](https://www.codementor.io/@gbozee/debugging-in-python-9ia7lof32) (Abiola, codementor.io, 2017) and use the Python module for debugging.
+6) Create a Word document and put your name and assignment number on the first page.
+7) Back in the IDE, create a break point, and start the debugging process, take a screenshot of your progress and paste into the Word document.
+8) Step into the function, and take a screenshot of the current location and paste it into the Word document.
+9) Use at least one more action in the code, either adding errors, or moving through the program and take a screenshot of the progress and paste into the Word document.
+10) Save the Word document, with at least three screenshots, into the CSD/CSD-325/module-2 directory.
+11) Save the Python program into the CSD/CSD-325/module-2 directory.
