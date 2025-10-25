@@ -95,3 +95,40 @@ For this assignment, you have three tasks. The first is find a program that you'
 9) Use at least one more action in the code, either adding errors, or moving through the program and take a screenshot of the progress and paste into the Word document.
 10) Save the Word document, with at least three screenshots, into the CSD/CSD-325/module-2 directory.
 11) Save the Python program into the CSD/CSD-325/module-2 directory.
+
+## Module 3
+10/27/2025 - 11/3/2025
+
+In this module, we'll be focusing on brownfield development, which you may not have done before. The term is usually used to compare development types; brownfield and greenfield, either in construction or program development. Basically a greenfield development means you are starting from scratch, constructing a building or a program from the ground up. A brownfield development means that you are taking some existing infrastructure and modifying it to suit a specific purpose. There are definitely advantages and disadvantages to each. You can read a little more about these by reading through the article Brownfield vs. Greenfield: Netkodo in the Reading list below.
+
+For this module you'll be doing a brownfield development on an existing program written to mimic a Cho-han game. The source code is provided...have fun!
+
+**Module Deliverables**
+
+1) Module 3.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 3.2 Assignment: Brownfield + Flowchart - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+
+In this module's discussion board assignment, answer the following questions:
+
+1) Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+    - Why did you select this topic?
+    - Summarize the main points (in your own words) of that topic in three or four sentences.
+    - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 3.2
+For this assignment, you have two tasks. The first is to create a flowchart (or flowcharts) for the following requirements, then to write a Python program that produces the required results:
+
+1) Create (if you haven't already) a directory in CSD-325 named module-3.
+2) Download the attached file: chohan.py
+3) Examine the code and figure out the flow of execution.
+4) Open up a drawing application. Use a text element to include your name and assignment number at the top of the drawing. Create a flowchart that models the above program.  Copy/paste the diagram into a Word document and save to your module-3 directory.
+5) Make the following changes to the chohan.py program:
+    - Change the input prompt to your initials and a colon. Ex. mss:
+    - Change the percentage that goes to the house to 12 percent instead of 10 percent.
+    - In the program introduction, include a notice that if the user gets a 2 or a 7 on a dice roll, they get a 10 mon bonus.
+    - If the dice roll is equal to a 2 or a 7, output a message to the user what the total of roll was and that they got a 10 mon bonus. Then add that bonus to the purse.
+    - Document all your changes, and save as chohan_"your initials".py. Ex. chohan_mss.py to your module-3 directory.
