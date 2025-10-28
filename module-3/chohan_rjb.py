@@ -3,6 +3,11 @@ The traditional Japanese dice game of even-odd.
 View this code athttps://nostarch.com/big-book-small-python-projects
 Tags: short, beginner, game"""
 
+"""
+Make the following changes to the chohan.py program:
+    - Document all your changes, and save as chohan_"your initials".py. Ex. chohan_mss.py to your module-3 directory.
+"""
+
 import random, sys
 
 JAPANESE_NUMBERS = {1: 'ICHI', 2: 'NI', 3: 'SAN',
@@ -13,6 +18,8 @@ print('''Cho-Han, by Al Sweigart al@inventwithpython.com
 In this traditional Japanese dice game, two dice are rolled in a bamboo
 cup by the dealer sitting on the floor. The player must guess if the
 dice total to an even (cho) or odd (han) number.
+      
+If the roll is either 2 or 7, you will win a 10 mon bonus!
 ''')
 
 purse = 5000
@@ -20,7 +27,7 @@ while True:  # Main game loop.
     # Place your bet:
     print('You have', purse, 'mon. How much do you bet? (or QUIT)')
     while True:
-        pot = input('> ')
+        pot = input('rjb: ') # Input Prompt changed to "rjb:"
         if pot.upper() == 'QUIT':
             print('Thanks for playing!')
             sys.exit()
@@ -45,7 +52,7 @@ while True:  # Main game loop.
 
     # Let the player bet cho or han:
     while True:
-        bet = input('> ').upper()
+        bet = input('rjb: ').upper() # Input Prompt changed to "rjb:"
         if bet != 'CHO' and bet != 'HAN':
             print('Please enter either "CHO" or "HAN".')
             continue
@@ -65,16 +72,28 @@ while True:  # Main game loop.
         correctBet = 'HAN'
 
     playerWon = bet == correctBet
+    totalroll = dice1 + dice2 # Added to see the total roll amount.
+
+# Checks to see if a bonus should be applies
+    if totalroll in (2,7): 
+        bonus = True 
+    else:
+        bonus = False
 
     # Display the bet results:
     if playerWon:
         print('You won! You take', pot, 'mon.')
         purse = purse + pot  # Add the pot from player's purse.
-        print('The house collects a', pot // 10, 'mon fee.')
-        purse = purse - (pot // 10)  # The house fee is 10%.
+        print('The house collects a', pot // 12, 'mon fee.') # Changed the fee to 12%
+        purse = purse - (pot // 12)  # The house fee is 12%.
     else:
         purse = purse - pot  # Subtract the pot from player's purse.
         print('You lost!')
+
+    if bonus: # Displays the bonus message and adds 10 to the purse if 2 or 7.
+        print(f"The total roll was {totalroll}.")
+        print("you won a 10 mon bonus!")
+        purse += 10
 
     # Check if the player has run out of money:
     if purse == 0:
