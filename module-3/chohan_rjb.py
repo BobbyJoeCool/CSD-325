@@ -3,11 +3,6 @@ The traditional Japanese dice game of even-odd.
 View this code athttps://nostarch.com/big-book-small-python-projects
 Tags: short, beginner, game"""
 
-"""
-Make the following changes to the chohan.py program:
-    - Document all your changes, and save as chohan_"your initials".py. Ex. chohan_mss.py to your module-3 directory.
-"""
-
 import random, sys
 
 JAPANESE_NUMBERS = {1: 'ICHI', 2: 'NI', 3: 'SAN',
