@@ -3,14 +3,6 @@ from datetime import datetime
 
 from matplotlib import pyplot as plt
 
-    # - Open the program with instructions on how to use the menu; Highs, Lows, or Exit.
-    # - When the program starts, allow the user to select whether they want to see the high temperatures or the low temperatures, or to exit.
-    # - When the user selects 'lows', they should see a graph, in blue, that reflects the lows for those dates.
-    # - Allow the program to loop until the user selects exit.
-    # - When the user exits, provide an exit message.
-    # - Use what elements you can from previous programs, perhaps including sys to help the exit process.
-    # - Document all your changes, and save as sitka_high_low_"your initials".py. Ex. sitka_high_low_mss.py to your module-4 directory.
-
 print("Hello!  This program will show you a graph of the high or "
         "low temperatures in Sitka, Alaska over the 2018 Year.  "
         "Please select from the menu which graph you would like to see."
