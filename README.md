@@ -75,7 +75,7 @@ You'll be stepping through a provided tutorial for debugging using an IDE, but t
 ### Discussion Board
 In this module's discussion board assignment, answer the following questions:
 
-1) Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
     - Why did you select this topic?
     - Summarize the main points (in your own words) of that topic in three or four sentences.
     - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
@@ -113,7 +113,7 @@ For this module you'll be doing a brownfield development on an existing program 
 
 In this module's discussion board assignment, answer the following questions:
 
-1) Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
     - Why did you select this topic?
     - Summarize the main points (in your own words) of that topic in three or four sentences.
     - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
@@ -132,3 +132,73 @@ For this assignment, you have two tasks. The first is to create a flowchart (or 
     - In the program introduction, include a notice that if the user gets a 2 or a 7 on a dice roll, they get a 10 mon bonus.
     - If the dice roll is equal to a 2 or a 7, output a message to the user what the total of roll was and that they got a 10 mon bonus. Then add that bonus to the purse.
     - Document all your changes, and save as chohan_"your initials".py. Ex. chohan_mss.py to your module-3 directory.
+
+## Module 4
+11/3/2025 - 11/10/2025
+
+In this module, we'll be focusing again on brownfield development, just to give you more practice. You'll also be working with additional modules; one that you'll need to install, and one that is ready to be imported.
+
+Read more on importing csv and installing matplotlib using the resources in the Reading list. For this module you'll be doing a brownfield development on an existing program written to display high temperatures in Sitka, Alaska. The data used for temperatures was saved as a .csv file. The source code is provided...have fun!
+
+### Deliverables
+1) Module 4.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 4.2 Assignment: High/Low Temperatures - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+    - Why did you select this topic?
+    - Summarize the main points (in your own words) of that topic in three or four sentences.
+    - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Include a link to that resource.
+
+### Assignment
+#### Assignment 4.2
+For this assignment, you have three tasks. The first is to create a flowchart (or flowcharts) for the following requirements, the second is to write a Python program that produces the required results, and the third is to revise your flowchart to reflect the changes.
+
+1) Create (if you haven't already) a directory in CSD-325 named module-4.
+2) Download the attached file: sitka_weather.zip
+3) Examine the code and figure out the flow of execution.
+4) Open up a drawing application. Use a text element to include your name and assignment number at the top of the drawing. Create a flowchart that models the above program. Copy/paste the diagram into a Word document and save to your module-4 directory.
+5) Before you can make changes, you'll need to install mathplotlib, see the instructions in the Reading List above.
+6) Make the following changes to the sitka_highs.py program:
+    - Open the program with instructions on how to use the menu; Highs, Lows, or Exit.
+    - When the program starts, allow the user to select whether they want to see the high temperatures or the low temperatures, or to exit.
+    - When the user selects 'lows', they should see a graph, in blue, that reflects the lows for those dates.
+    - Allow the program to loop until the user selects exit.
+    - When the user exits, provide an exit message.
+    - Use what elements you can from previous programs, perhaps including sys to help the exit process.
+    - Document all your changes, and save as sitka_high_low_"your initials".py. Ex. sitka_high_low_mss.py to your module-4 directory.
+7) Open up your initial flowchart and revise it to reflect the changes made to the program. Take a screenshot and add it to your Word document, and save to your module-4 directory.
+
+## Module 5
+11/3/2025 - 11/10/2025
+
+In this module, we'll be focusing again on brownfield development, just to give you even more practice. The project for this module will result in an example of emergent behavior, which is best described as the interaction between simple parts in a system creating complicated patterns. Read more in the article listed below. You'll be working in small teams with 2-3 students. This small project will include both Module 5 and Module 6 assignments. You'll need at least one additional module for Python: Bext. Read more on installing Bext with the resources in the Reading list.
+
+For this project you'll be doing the modeling, both before and after modifications for a brownfield development on a current program modified from a previous program, based on an original program, all of which are forest fire simulations (who wrote what is documented in the code). The latest source code is provided...have fun!
+
+### Deliverables
+1) Module 5.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 5.2 Assignment: Forest Fire Simulation: Flowchart - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 5.2
+For this assignment, you have two tasks. The first is to click on "Groups/Teams" in the left-side menu and introduce yourself by providing information on when you are available to communicate with team members. The second task is to create a flowchart (or flowcharts) for the code provided. Once the team decides on a final version of the flowchart, you need to submit that to Blackboard. Once that is submitted, the modifications required can be viewed in the next module. Why the wait? I want the team to have a firm understanding of how this program works, step by step. It's not a long program, but it is a little complicated. You'll be creating the program and the modified flowchart during the next module.
+
+One additional step you might take is to write down the rules regarding assignment of pixels. In this program, pixels are initially populated with either trees, fire, or remain empty based on growth rates and lightning chance. Each time the program is run, you'll see different patterns emerging due to the random placement.
+
+1) Create (if you haven't already) a directory in CSD-325 named module-5.
+2) Download the attached file: forestfiresim.py.
+3) Examine the code and figure out the flow of execution.
+4) Install Bext per instructions in Bext article in Reading List.
+5) Run the code in a command line interface to see the colors.
+6) Open up a drawing application. Use a text element to include each team member's name and assignment number at the top of the drawing. Create a flowchart that models the above program. Copy/paste the diagram into a Word document and save to your module-5 directory.
