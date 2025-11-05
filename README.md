@@ -134,7 +134,7 @@ For this assignment, you have two tasks. The first is to create a flowchart (or 
     - Document all your changes, and save as chohan_"your initials".py. Ex. chohan_mss.py to your module-3 directory.
 
 ## Module 4
-11/3/2025 - 11/10/2025
+11/3/2025 - 11/9/2025
 
 In this module, we'll be focusing again on brownfield development, just to give you more practice. You'll also be working with additional modules; one that you'll need to install, and one that is ready to be imported.
 
@@ -171,7 +171,7 @@ For this assignment, you have three tasks. The first is to create a flowchart (o
 7) Open up your initial flowchart and revise it to reflect the changes made to the program. Take a screenshot and add it to your Word document, and save to your module-4 directory.
 
 ## Module 5
-11/3/2025 - 11/10/2025
+11/3/2025 - 11/9/2025
 
 In this module, we'll be focusing again on brownfield development, just to give you even more practice. The project for this module will result in an example of emergent behavior, which is best described as the interaction between simple parts in a system creating complicated patterns. Read more in the article listed below. You'll be working in small teams with 2-3 students. This small project will include both Module 5 and Module 6 assignments. You'll need at least one additional module for Python: Bext. Read more on installing Bext with the resources in the Reading list.
 
