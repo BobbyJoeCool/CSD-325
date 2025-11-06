@@ -25,7 +25,7 @@ with open(filename) as f:
         low = int(row[6])
         lows.append(low)
 
-# Create fucntions to plot the temperatures.
+# Create functions to plot the temperatures.
 # Uses functions so a composite graph can be made calling both.
 #plt.style.use('seaborn')
 def plotHighs(ax):
