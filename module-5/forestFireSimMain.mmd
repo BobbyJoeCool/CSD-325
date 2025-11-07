@@ -1,0 +1,48 @@
+flowchart TD
+    %% --- Node Definitions and Connections ---
+    Start((Main Start)):::terminatorStart --> createForest((CreateForest)):::terminatorStart
+    createForest --> p1[Clear Screen]:::process
+    p1 --> p2[Initalize While Loop]:::process
+    p2 --> displayForest((displayForest)):::terminatorStart
+    displayForest --> p3[Initalize 'nextForest' dictionary]:::process
+    p3 --> p4[For x,y in nextForest]:::process
+    p4 --> o[new x,y]:::process
+    o --> d4{is x,y already changed}:::decision
+    d4 -- no --> d1{is x,y EMPTY and RAND<=GROWTH}:::decision
+    d1 -- no --> d2{is x,y TREE and RAND<=IGNITE}:::decision
+    d2 -- no --> d3{is x,y FIRE}:::decision
+    d3 -- no --> p5[Nothing Changes]:::process
+    d4 -- yes --> p11{All x,y done?}:::decision
+    d1 -- yes --> p6[Set to TREE]:::process
+    d2 -- yes --> p7[Set to FIRE]:::process    
+    d3 -- yes --> d8{neighbor Space=TREE?}:::decision
+    p5 --> p11
+    p6 --> p11
+    p7 --> p11
+    d8 -- yes --> p9[Set neighbor to FIRE]:::process
+    d8 -- no --> p8[Set x,y to EMPTY]:::process
+    p9 --> p8
+    p8 --> p11
+    p11 -- no --> o
+    p11 -- yes --> p12[Sleep]:::process
+    p12 --> displayForest
+
+    io1[/Press Cntr-C/]:::inputOutput --> End((Exit)):::terminatorFinish
+
+    %% --- Class Definitions ---
+    
+    %% Process Rectangle: Blue (white text)
+    classDef process fill:#0066cc,stroke:#333,color:#fff;
+
+    %% Decision Diamond: Orange (White Text)
+    classDef decision fill:#ff9900,stroke:#333,color:#fff;
+
+    %% Database Can: Yellow (Black Text)
+    classDef database fill:#ffeb3b,stroke:#333,color:#000;
+
+    %% Input/Output parallelogram: Purple (White Text)
+    classDef inputOutput fill:#9933cc,stroke:#333,color:#fff;
+
+    %% Terminator Circle: Green for Start, Red for Finish (White Text)
+    classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff;
+    classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff;
