@@ -1,48 +1,63 @@
 flowchart TD
-    %% --- Node Definitions and Connections ---
-    Start((Main Start)):::terminatorStart --> createForest((CreateForest)):::terminatorStart
-    createForest --> p1[Clear Screen]:::process
-    p1 --> p2[Initalize While Loop]:::process
-    p2 --> displayForest((displayForest)):::terminatorStart
-    displayForest --> p3[Initalize 'nextForest' dictionary]:::process
-    p3 --> p4[For x,y in nextForest]:::process
-    p4 --> o[new x,y]:::process
-    o --> d4{is x,y already changed}:::decision
-    d4 -- no --> d1{is x,y EMPTY and RAND<=GROWTH}:::decision
-    d1 -- no --> d2{is x,y TREE and RAND<=IGNITE}:::decision
-    d2 -- no --> d3{is x,y FIRE}:::decision
-    d3 -- no --> p5[Nothing Changes]:::process
-    d4 -- yes --> p11{All x,y done?}:::decision
-    d1 -- yes --> p6[Set to TREE]:::process
-    d2 -- yes --> p7[Set to FIRE]:::process    
-    d3 -- yes --> d8{neighbor Space=TREE?}:::decision
+    Start(("Main Start")) --> createForest(("Create New Forest"))
+    createForest --> p1["Clear Screen"]
+    p1 --> p2["Initalize While Loop"]
+    p2 --> displayForest(("displayForest"))
+    displayForest --> p3@{ label: "Initalize 'nextForest' dictionary" }
+    p3 --> p4["For each x,y in nextForest"]
+    d4{"does x,y already exist"} -- no --> d1{"is x,y EMPTY and RAND &lt;= GrowChance"}
+    d1 -- no --> d2{"is x,y TREE and RAND &lt;= FireChance"}
+    d2 -- no --> d3{"is x,y FIRE"}
+    d3 -- no --> p5["Set x,y to same value as last forest"]
+    d4 -- yes --> p11{"All x,y done?"}
+    d1 -- yes --> p6["Set x,y to TREE"]
+    d2 -- yes --> p7["Set x,y to FIRE"]
     p5 --> p11
     p6 --> p11
     p7 --> p11
-    d8 -- yes --> p9[Set neighbor to FIRE]:::process
-    d8 -- no --> p8[Set x,y to EMPTY]:::process
-    p9 --> p8
-    p8 --> p11
-    p11 -- no --> o
-    p11 -- yes --> p12[Sleep]:::process
+    p8["Set x,y to EMPTY"] --> p11
+    d8{"neighbor Cell= Tree?"} -- Yes --> p9["Set neighbor to FIRE"]
+    p9 --> n2["Done Iterating NeigborCells?"]
+    p11 -- no --> p4
+    p11 -- yes --> p12["Sleep"]
     p12 --> displayForest
+    io1[/"Press Cntr-C"/] --> End(("Exit"))
+    n1["For Each Neighbor Cell"] --> d8
+    n2 -- No --> n1
+    n2 -- YEs --> p8
+    d3 -- Yes --> n1
+    d8 -- No --> n2
+    p4 --> d4
 
-    io1[/Press Cntr-C/]:::inputOutput --> End((Exit)):::terminatorFinish
-
-    %% --- Class Definitions ---
-    
-    %% Process Rectangle: Blue (white text)
-    classDef process fill:#0066cc,stroke:#333,color:#fff;
-
-    %% Decision Diamond: Orange (White Text)
-    classDef decision fill:#ff9900,stroke:#333,color:#fff;
-
-    %% Database Can: Yellow (Black Text)
-    classDef database fill:#ffeb3b,stroke:#333,color:#000;
-
-    %% Input/Output parallelogram: Purple (White Text)
-    classDef inputOutput fill:#9933cc,stroke:#333,color:#fff;
-
-    %% Terminator Circle: Green for Start, Red for Finish (White Text)
-    classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff;
-    classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff;
+    p3@{ shape: rect}
+    n2@{ shape: diam}
+    n1@{ shape: rect}
+     Start:::terminatorStart
+     createForest:::terminatorStart
+     p1:::process
+     p2:::process
+     displayForest:::terminatorStart
+     p3:::process
+     p4:::process
+     d4:::decision
+     d1:::decision
+     d2:::decision
+     d3:::decision
+     p5:::process
+     p11:::decision
+     p6:::process
+     p7:::process
+     p8:::process
+     d8:::decision
+     p9:::process
+     n2:::decision
+     p12:::process
+     io1:::inputOutput
+     End:::terminatorFinish
+     n1:::process
+    classDef database fill:#ffeb3b,stroke:#333,color:#000
+    classDef inputOutput fill:#9933cc,stroke:#333,color:#fff
+    classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff
+    classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff
+    classDef process fill:#0066cc, stroke:#333, color:#fff
+    classDef decision fill:#ff9900, stroke:#333, color:#fff

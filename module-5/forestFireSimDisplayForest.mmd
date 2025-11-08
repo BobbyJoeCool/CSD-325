@@ -1,0 +1,47 @@
+flowchart TD
+    Start(("Start displayForest")) --> n6["Initialize Bext(0,0)"]
+    p1["For x,y"] --> d1{"is x,y TREE"}
+    d1 -- no --> d2{"is x,y FIRE"}
+    d2 -- no --> d3{"is x,y EMPTY"}
+    d1 -- yes --> p2["Set bext fg = green"]
+    d2 -- yes --> p3["Set bext fg = red"]
+    d3 -- yes --> p4["Log Console = {space}"]
+    p4 --> d4{"all x,y done?"}
+    d4 -- no --> p1
+    io1[/"Display Grow Chance"/] --> n4[/"Display Lightning Chance"/]
+    p2 --> n1@{ label: "<span style=\"color:\">Log console = A</span>" }
+    p3 --> n2["Log console = @"]
+    n1 --> d4
+    n2 --> d4
+    n4 --> n5["Display How to stop program"]
+    n5 --> End(("End"))
+    n6 --> p1
+    d4 -- Yes --> n7["Reset Bext fg"]
+    n7 --> io1
+
+    n1@{ shape: rect}
+    n2@{ shape: rect}
+    n5@{ shape: lean-r}
+     Start:::terminatorStart
+     n6:::process
+     p1:::process
+     d1:::decision
+     d2:::decision
+     d3:::decision
+     p2:::process
+     p3:::process
+     p4:::inputOutput
+     d4:::decision
+     io1:::inputOutput
+     n4:::inputOutput
+     n1:::inputOutput
+     n2:::inputOutput
+     n5:::inputOutput
+     End:::terminatorFinish
+     n7:::process
+    classDef decision fill:#ff9900,stroke:#333,color:#fff
+    classDef database fill:#ffeb3b,stroke:#333,color:#000
+    classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff
+    classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff
+    classDef inputOutput fill:#9933cc, stroke:#333, color:#fff
+    classDef process fill:#0066cc, stroke:#333, color:#fff
