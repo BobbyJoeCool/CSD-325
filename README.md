@@ -202,3 +202,35 @@ One additional step you might take is to write down the rules regarding assignme
 4) Install Bext per instructions in Bext article in Reading List.
 5) Run the code in a command line interface to see the colors.
 6) Open up a drawing application. Use a text element to include each team member's name and assignment number at the top of the drawing. Create a flowchart that models the above program. Copy/paste the diagram into a Word document and save to your module-5 directory.
+
+## Module 6
+11/10/2025 - 11/16/2025
+
+In this module, you'll be continuing the forest fire simulation project.
+
+For this module you'll be making modifications for a brownfield development on a current program modified from a previous program, based on an original program, all of which are forest fire simulations. You'll also need to revise your original flowchart to reflect those changes. The latest source code is provided...have fun!
+
+### Discussion Board
+
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 6.2
+**Forest Fire Simulation: Program and Revised Flowchart**
+
+For this assignment, you have two tasks. The first is make the modifications listed below to the forestfiresim.py program. The second is to revise the teams' original flowchart to reflect those modifications. The team needs to work together on the program and the flowchart.   **hint.. to see maximum color, I ran this through the command line, not an IDE.
+
+1) Create (if you haven't already) a directory in CSD-325 named module-6.
+2) Download (if you haven't already) the attached file in Module 5: forestfiresim.py.
+3) Make the following modifications to the program:
+    - Add a lake roughly in the center of the display. You might want to take a look at the video above titled Mod5 Cartesian for a brief explanation of how elements are placed in a display.
+    - The water feature should use a different character (not A or @) and be blue.
+    - The water feature cannot be modified once it is in place, the water feature acts as a firebreak that flames cannot cross.
+
+4) Document all your code changes, and save as forestfiresim_325.py to your module-6 directory.
+5) Open up a drawing application. Use a text element to include each team member's name and assignment number at the top of the drawing. Create a flowchart that depicts the revisions. Copy/paste the diagram into a Word document and save to your module-6 directory.
