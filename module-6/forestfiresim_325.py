@@ -1,3 +1,11 @@
+# Alexander Baldree
+# Robert Breutzmann
+# Maksymilian Jankowski
+# Carolina Rodriguez
+# Matthew Rozendaal
+# 11/13/2025
+# Module 6.2
+
 import random, sys, time
 
 try:
@@ -15,11 +23,11 @@ HEIGHT = 22
 TREE = 'A'
 FIRE = '@'
 EMPTY = ' '
-WATER = '~'  # 💧 New water symbol
+WATER = 'W'  #  New water symbol
 
 # (!) Try changing these settings to anything between 0.0 and 1.0:
 INITIAL_TREE_DENSITY = 0.20  # Amount of forest that starts with trees.
-INITIAL_WATER_DENSITY = 0.10  # 💧 Amount of water that starts on the map.
+INITIAL_WATER_DENSITY = 0.10  #  Amount of water that starts on the map.
 GROW_CHANCE = 0.01  # Chance a blank space turns into a tree.
 FIRE_CHANCE = 0.01  # Chance a tree is hit by lightning & burns.
 
@@ -45,7 +53,7 @@ def main():
                 cell = forest[(x, y)]
 
                 if cell == WATER:
-                    # 💧 Water never changes.
+                    #  Water never changes.
                     nextForest[(x, y)] = WATER
 
                 elif (cell == EMPTY) and (random.random() <= GROW_CHANCE):
@@ -74,16 +82,65 @@ def main():
         forest = nextForest
         time.sleep(PAUSE_LENGTH)
 
+def CreateWaterInForest(forest):
+    """Adds water to the forest based on INITIAL_WATER_DENSITY.
+    ️    Returns the updated forest dictionary.
+    ️    The water is placed starting from the center of the forest
+        and expanding outwards in random directions.
+    """
+    total_cells = WIDTH * HEIGHT
+    # Find middle of forest
+    mid_x = WIDTH // 2
+    mid_y = HEIGHT // 2
+    expected_water_cells = int(total_cells * INITIAL_WATER_DENSITY)
+
+    # Place water cells around the center
+    # randomly until we reach the expected number of water cells
+    current_x = mid_x
+    current_y = mid_y
+
+    direction = 0  # 0: right, 1: down, 2: left, 3: up
+
+    water_cells_placed = 0
+
+    while water_cells_placed < expected_water_cells:
+
+        # Get new direction
+        direction = random.randint(0, 3)
+        if direction == 0:  # Move right
+            current_x += 1
+        elif direction == 1:  # Move down
+            current_y += 1
+        elif direction == 2:  # Move left
+            current_x -= 1
+        elif direction == 3:  # Move up
+            current_y -= 1
+
+        # Ensure we stay within bounds
+        current_x = max(0, min(WIDTH - 1, current_x))
+        current_y = max(0, min(HEIGHT - 1, current_y))
+
+        # Place water if the cell is empty
+        if (current_x, current_y) in forest:
+            continue  # Already assigned (water).
+        forest[(current_x, current_y)] = WATER
+        water_cells_placed += 1
+    return forest
+
 
 def createNewForest():
     """Returns a dictionary for a new forest data structure."""
     forest = {'width': WIDTH, 'height': HEIGHT}
+
+    forest = CreateWaterInForest(forest)
+
     for x in range(WIDTH):
         for y in range(HEIGHT):
-            rand = random.random()
-            if rand < INITIAL_WATER_DENSITY:
-                forest[(x, y)] = WATER
-            elif rand < INITIAL_WATER_DENSITY + INITIAL_TREE_DENSITY:
+            rand = random.random
+            ()
+            if (x, y) in forest:
+                continue  # Already assigned (water).
+            elif rand < INITIAL_TREE_DENSITY:
                 forest[(x, y)] = TREE
             else:
                 forest[(x, y)] = EMPTY
