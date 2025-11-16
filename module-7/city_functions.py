@@ -4,7 +4,10 @@
 # Due Date - 11/24/25
 
 def combineCity(city, country, population: int = None):
-    result = f"{city}, {country} population {population:,}"
+    if population:
+        result = f"{city}, {country} population {population:,}"
+    else:
+        result = f"{city}, {country}"
     return result
 
 city1 = "Madrid"
