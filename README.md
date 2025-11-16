@@ -234,3 +234,45 @@ For this assignment, you have two tasks. The first is make the modifications lis
 
 4) Document all your code changes, and save as forestfiresim_325.py to your module-6 directory.
 5) Open up a drawing application. Use a text element to include each team member's name and assignment number at the top of the drawing. Create a flowchart that depicts the revisions. Copy/paste the diagram into a Word document and save to your module-6 directory.
+
+## Module 7
+11/17/2025 - 11/24/2025
+
+In this module, we'll be working with a Python module called unittest, which allows you to create test cases both at the function level and at a class level to make sure your code is behaving as you thought it would. You'll be using a chapter out of the Python Crash Course text, which is available from the Bellevue University Library. I've included a short .pdf file in the reading area that depicts how to access the text. Have fun with it!
+
+**Deliverables**
+1) Module 7.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 7.2 Assignment: Test Cases - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 7.2
+For this assignment, you have two tasks. The first is to write a Python program that produces the required results. Document those results, then add unit tests to test whether functions work as required.
+1) Create (if you haven't already) a directory in CSD-325 named module-7.
+2) Open a Word document and put your name and assignment number at the top.
+3) Read through Chapter 11 in the Python Crash Course text. Link on how to access is in the 'Select Text from Library.pdf' file listed in the Reading area.
+4) Create a program that includes the following:
+    - Write a function that accepts two parameters: a city name and a country name. The function should return a single string of the form City, Country, such as Santiago, Chile. Store the function in a file named city_functions.py. In the same file, call the function at least three times using a City, Country values. Excecute city_functions.py and take a screenshot of the result. Paste that screenshot into your Word document.
+    - Create a file called test_cities.py that tests the function you just wrote (remember that you need to import unittest and the function you want to test). Write a method called test_city_country() to verify that calling your function with values such as santiago and chile results in the correct string. Run test_cities.py, and make sure test_city_country() passes. When it passes, take a screenshot of the result and paste in into your Word document.
+    - Modify your city_country function in city_functions.py so it requires a third parameter, population. It should now return a single string of the form City, Country - population xxx, such as Santiago, Chile - population 5000000.
+    - Run test_cities.py again. It should fail. Take a screenshot of the result and paste into your Word document.
+    - Now modify your city_country function in city_functions.py so that the population parameter is optional.
+    - Run test_cities.py again. It should pass. Take a screenshot of the result and paste into your Word document.
+    - Modify your city_country function in city_functions.py so it requires a fourth parameter, language. It should now return a single string of the form City, Country - population xxx, Language, such as Santiago, Chile - population 5000000, Spanish.
+    - Run test_cities.py again. It should fail. Take a screenshot of the result and paste into your Word document.
+    - Now modify your city_country function in city_functions.py so that the language argument is optional.
+    - Run test_cities.py again. It should pass. Take a screenshot of the result and paste into your Word document.
+    - Run city_functions.py. Call the function at least three times using a City, Country for one, City, Country, Population for the next and City, Country, Population, Language for the last. Excecute city_functions.py and take a screenshot of the result. Paste that screenshot into your Word document.
+5) Save your Word document to your module-7 directory.
+6) Save the city_functions.py and final test_cities.py to your module-7 directory.
+
+Zip your module-7 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
