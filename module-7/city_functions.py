@@ -3,7 +3,7 @@
 # Assignment 7.2
 # Due Date - 11/24/25
 
-def combineCity(city, country, population=int):
+def combineCity(city, country, population: int = None):
     result = f"{city}, {country} population {population:,}"
     return result
 
