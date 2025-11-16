@@ -3,10 +3,12 @@
 # Assignment 7.2
 # Due Date - 11/24/25
 
-def combineCity(city, country, population: int = None, lang):
+def combineCity(city, country, population: int = None, lang = None):
     result = f"{city}, {country}"
     if population:
         result += f" population - {population:,}"
+    if lang:
+        result += f", {lang}"
     return result
 
 city1 = "Madrid"
