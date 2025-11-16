@@ -276,3 +276,52 @@ For this assignment, you have two tasks. The first is to write a Python program 
 6) Save the city_functions.py and final test_cities.py to your module-7 directory.
 
 Zip your module-7 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
+
+
+## Module 8
+11/17/2025 - 11/24/2025
+
+In this module, we'll be working with JavaScript Object Notation(JSON). At its core, JSON is a popular data interchange standard, which means that data can be exchanged between online services and manipulated using a variety of programming languages. JSON data is frequently expressed as objects, arrays, strings, numbers, etc. You'll see a conversion chart in the article listed below titled "Reading & Parsing JSON Data With Python: Tutorial." Why JSON? You'll need to have a good understanding of JSON before you complete the next module on APIs. Have fun with it!
+
+**Deliverables**
+1) Module 8.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 8.2 Assignment: JSON Practice - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignments
+#### Assignment 8.2
+
+**Assignment: JSON Practice**
+For this assignment, you have two tasks. The first is to create a flowchart (or flowcharts) for the following requirements, then to write a Python program that produces the required results:
+1) Create (if you haven't already) a directory in CSD-325 named module-8.
+2) Open up a drawing application. Use a text element to include your name and assignment number at the top of the drawing. Create a flowchart that models the program below. Either copy/paste the diagram into a Word document or save as a .pdf. File should be saved to your module-8 directory.
+3) Open a Word document and put your name and assignment number at the top.
+4) Read through Reading List above.
+5) Download the student.json file attached to the assignment. Take a look at the contents.
+6) Create a program that includes the following:
+    - Use the JSON load()  function to load the file into a Python class list.
+    - Create a function that loops through the .json class list and prints out each value, should look something like:
+        - Ripley, Ellen : ID = 45604 , Email = eripley@gmail.com
+    - Output notification to the user that this is the original Student list.
+    - Call your print function.
+    - Add your last name, first name, fictional ID, and email to the class list using append().
+    - Output notification to the user that this is the updated Student list.
+    - Call your print function.
+    - Use the JSON dump() function to append the new data to the .json file.
+    - Output notification to the user that the .json file was updated.
+    - Run the program and take a screenshot of the results. Paste that screenshot into your Word document.
+    - Once the program runs, you should also see a notification that the student.json file has changed, with a choice to save or not. Take a screen shot of the notification and paste into your Word document. Should look similar to : (See Blackboard for Image)
+    - Open the .json file and copy the contents, then paste that into your Word document.
+7) Save your Word document to your module-8 directory.
+8) Save the Python file(s) to your module-8 directory.
+
+- Zip your module-8 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
