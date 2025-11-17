@@ -1,0 +1,44 @@
+flowchart TD
+%% --- Node Definitions ---
+Start((Start)):::terminatorStart;
+importJSON[Import JSON]:::process;
+OriginalOutput[/This is the original list/]:::inputOutput;
+displayStudent((displayStudents)):::terminatorStart;
+CreateStudent[[Create New Student]]:::process;
+AppendToJSON[(Append new student to JSON)]:::database;
+UpdatedOutput[/This is the updated list/]:::inputOutput;
+displayStudent2((displayStudents)):::terminatorStart;
+DatabaseAppended[/The Database has been appended/]:::inputOutput;
+End((End)):::terminatorFinish;
+
+
+StartDisplayStudent((sisplayStudent<br>Function)):::terminatorStart;
+ImportJSONFile[(Import JSON file)]:::database;
+ForEachStudent[[For each student]]:::process;
+GetInfo[[Get Info for Student]]:::process;
+PrintStudentInfo[/Print Student Info/]:::inputOutput;
+DoneIterating{All Students Done?}:::decision;
+CloseJSONFile[(Close JSON File)]:::database;
+EndFunction((End Function)):::terminatorFinish;
+
+%% --- None Connections ---
+Start --> importJSON --> OriginalOutput --> displayStudent --> CreateStudent;
+CreateStudent --> AppendToJSON --> UpdatedOutput --> displayStudent2;
+displayStudent2 --> DatabaseAppended --> End;
+
+StartDisplayStudent --> ImportJSONFile --> ForEachStudent;
+ForEachStudent --> GetInfo --> PrintStudentInfo --> DoneIterating;
+DoneIterating -- No --> GetInfo;
+DoneIterating -- Yes --> CloseJSONFile --> EndFunction;
+
+
+
+
+
+%% --- Class Definitions ---
+classDef process fill:#0066cc,stroke:#333,color:#fff;
+classDef decision fill:#ff9900,stroke:#333,color:#fff;
+classDef database fill:#ffeb3b,stroke:#333,color:#000;
+classDef inputOutput fill:#9933cc,stroke:#333,color:#fff;
+classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff;
+classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff;
