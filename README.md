@@ -236,7 +236,7 @@ For this assignment, you have two tasks. The first is make the modifications lis
 5) Open up a drawing application. Use a text element to include each team member's name and assignment number at the top of the drawing. Create a flowchart that depicts the revisions. Copy/paste the diagram into a Word document and save to your module-6 directory.
 
 ## Module 7
-11/17/2025 - 11/24/2025
+11/17/2025 - 11/23/2025
 
 In this module, we'll be working with a Python module called unittest, which allows you to create test cases both at the function level and at a class level to make sure your code is behaving as you thought it would. You'll be using a chapter out of the Python Crash Course text, which is available from the Bellevue University Library. I've included a short .pdf file in the reading area that depicts how to access the text. Have fun with it!
 
@@ -279,7 +279,7 @@ Zip your module-7 directory and submit by clicking on the Assignment Link above,
 
 
 ## Module 8
-11/17/2025 - 11/24/2025
+11/17/2025 - 11/23/2025
 
 In this module, we'll be working with JavaScript Object Notation(JSON). At its core, JSON is a popular data interchange standard, which means that data can be exchanged between online services and manipulated using a variety of programming languages. JSON data is frequently expressed as objects, arrays, strings, numbers, etc. You'll see a conversion chart in the article listed below titled "Reading & Parsing JSON Data With Python: Tutorial." Why JSON? You'll need to have a good understanding of JSON before you complete the next module on APIs. Have fun with it!
 
@@ -325,3 +325,46 @@ For this assignment, you have two tasks. The first is to create a flowchart (or 
 8) Save the Python file(s) to your module-8 directory.
 
 - Zip your module-8 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
+
+## Module 9
+11/24/2025 - 11/30/2025
+
+In this module, we'll be working with open application programming interfaces (APIs) to pull data from a website. An API is used extensively in online transactions, retrieving real-time data (think stock quotes), accessing Google maps, etc. API documentation provides information on how to access the data from the site, typically whether or not parameters are required, and whether you want the result as a .json file or a .csv file. An API endpoint is a specific location within an API that accepts requests and sends back responses. You will have to install Requests using that pip command. Exact syntax is in the tutorial.  Have fun with it!
+
+### Deliverables
+1) Module 9.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+2) Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+3) Module 9.2 Assignment: APIs - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignment
+#### Assignment 9.2
+**Assignment: APIs**
+
+For this assignment, you have two tasks. The first is to work through a tutorial on APIs then to write a Python program using an API of your choice. Couple of things to consider when you work with APIs; it's best to test the connection before you start working with the response. For example, open up a new python file and use this code (save before running):
+```python
+import requests
+response = requests.get('<http://www.google.com>')
+print(response.status_code)
+```
+1) Create (if you haven't already) a directory in CSD-325 named module-9.
+2) Open a Word document and put your name and assignment number at the top.
+3) Open the API tutorial listed in the Reading List.
+4) Create a Python program to use for the tutorial. Use the correct URL listed above in the Reading List to test the connection, run the program, take a screenshot of the results and paste into the Word document.
+5) Complete the section in the tutorial for retrieving current astronauts and formatting output. Incorporate that code into your program, run the program and take a screenshot of the results and paste into the Word document.
+6) Create a program that includes the following:
+    - Find a simple API. The link above has a couple that you can work with, but the examples are not in Python...the concept is the same..
+    - Test the connection to your API, output results.
+    - Print out the response from the request, with no formatting.
+    - Print out the response with same formatting as the tutorial program.
+    - Run the program and take a screenshot of the results. Paste that screenshot into your Word document.
+7) Save your Word document to your module-9 directory.
+8) Save the Python file(s) to your module-9 directory.
+9) Zip your module-9 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
