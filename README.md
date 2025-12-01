@@ -367,4 +367,47 @@ print(response.status_code)
     - Run the program and take a screenshot of the results. Paste that screenshot into your Word document.
 7) Save your Word document to your module-9 directory.
 8) Save the Python file(s) to your module-9 directory.
-9) Zip your module-9 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
+9) Zip your module-9 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.
+
+## Module 10
+12/1/2025 - 12/7/2025
+
+In this module, we'll be working with Tkinter to build a GUI window to simulate a To Do List. Like many GUI frameworks, Tkinter allows you to build a completely customized window, then fill it with whatever elements you need; text boxes, buttons, labels, menus, etc. As you read through the Tkinter By Example.pdf below, note the order those elements are defined. This is another brownfield development, as you'll be taking existing code and building/modify it to match requirements. Have fun with it!
+
+### Deliverables
+1. Module 10.1 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CT.
+1. Discussion Board Responses - Due by Sunday 11:59 p.m., CT.
+1. Module 10.2 Assignment: GUI ToDo - Due by Sunday 11:59 p.m., CT.
+
+### Discussion Board
+
+In this module's discussion board assignment, answer the following questions:
+
+- Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+  - Why did you select this topic?
+  - Summarize the main points (in your own words) of that topic in three or four sentences.
+  - Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Write an additional 1-2 sentences. Include a link to that resource.
+
+### Assignment
+#### Assignment 10.2
+**Assignment: GUI ToDo**
+
+For this assignment, you have two tasks. The first is to work through a tutorial on building a GUI To Do List, then to modify the program to fit requirements.
+
+1. Create (if you haven't already) a directory in CSD-325 named module-10.
+1. Open a Word document and put your name and assignment number at the top.
+1. Open the Tkinter-By-Example.pdf file listed in the Reading List.
+1. Create a Python program to use for the provided example.
+1. Read through the end of Section 2 in the tutorial and copy the code in Listing 2.2 Our Scrolling To-Do. Paste into your Python program and save to your module-10 directory. Run the program, add a couple of tasks, and take a screenshot of the output and paste into the Word document.
+1. Using the other items in the reading list, complete the following modifications:
+    - Change the Title of the window to your last name-ToDo. Ex. Sampson-ToDo
+    - Change the color of the menu items, two (2) complementary colors work best.
+    - Currently, the user clicks the left mouse button to delete a task.. change that to the right mouse button.
+    - Provide instructions in the label on how to delete a task.
+    - We want the user to exit correctly, so add a menu item of File -> Exit. When clicked, Exit will end the program.
+    - Run the program, add a few tasks and take a screenshot. Paste that screenshot into your Word document.
+    - As the program is running, delete a task, then take a screenshot. Paste that screenshot into your Word document.
+    - Here's an example of how the program might look: (See Blackboard for Example)
+1. Save your Word document to your module-10 directory.
+1. Save the Python file(s) to your module-10 directory.
+1. Zip your module-10 directory and submit by clicking on the Assignment Link above, then scroll down to the Upload Files section and click on Browse Local Files. Select your zipped folder, add any comments as appropriate, and then click on Submit.  
